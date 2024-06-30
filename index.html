@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Precios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .card:hover {
+            background-color: #f28b82;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .card .price {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .card .order-btn {
+            background-color: #ffeb3b;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .card:hover .order-btn {
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla de Precios</h1>
+    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+    <div class="pricing-table">
+        <div class="card">
+            <h2>comienzo</h2>
+            <p>Gratis</p>
+            <p>1 usuario</p>
+            <p>1 proyecto</p>
+            <button class="order-btn">Ordenar ahora</button>
+        </div>
+        <div class="card">
+            <h2>Básico</h2>
+            <p class="price">$19.99</p>
+            <p>5 usuarios</p>
+            <p>5 proyectos</p>
+            <button class="order-btn">Ordenar ahora</button>
+        </div>
+        <div class="card">
+            <h2>Medio</h2>
+            <p class="price">$49.99</p>
+            <p>100 usuarios</p>
+            <p>100 proyectos</p>
+            <button class="order-btn">Ordenar ahora</button>
+        </div>
+        <div class="card">
+            <h2>Expet</h2>
+            <p class="price">$199.99</p>
+            <p>Usuarios ilimitados</p>
+            <p>Proyectos ilimitados</p>
+            <button class="order-btn">Ordenar ahora</button>
+        </div>
+    </div>
+</body>
+</html>
